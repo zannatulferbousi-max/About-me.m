@@ -1,0 +1,134 @@
+/* প্রফেশনাল এবং রঙিন ফন্ট এবং গ্লোবাল স্টাইল */
+body {
+    font-family: 'Poppins', 'Noto Sans Bengali', sans-serif;
+    background-color: #0d1117; /* একটি গভীর ডার্ক ব্যাকগ্রাউন্ড */
+    color: #c9d1d9; /* হালকা টেক্সট রঙ */
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+}
+
+/* কার্ড ডিজাইন এবং অ্যানিমেশন: আরও বিস্তারিত এবং রঙিন */
+.card {
+    background: linear-gradient(135deg, #161b22 0%, #1a1f26 100%); /* রঙিন গ্রেডিয়েন্ট ব্যাকগ্রাউন্ড */
+    border: 1px solid #30363d;
+    border-radius: 20px;
+    padding: 50px; /* আরও বেশি প্যাডিং */
+    margin-bottom: 40px; /* আরও বেশি মার্জিন */
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* কার্ড হোভার প্রভাব: আরও উজ্জ্বল এবং ডায়নামিক */
+.card:hover {
+    transform: translateY(-10px) rotateX(2deg) rotateY(-2deg); /* নতুন 3D অ্যানিমেশন */
+    box-shadow: 0 15px 40px rgba(88, 166, 255, 0.4), 0 0 10px rgba(88, 166, 255, 0.2); /* আরও রঙিন উজ্জ্বল প্রভাব */
+    border-color: #58a6ff;
+}
+
+/* কার্ডের ভেতরের কন্টেন্ট হোভার অ্যানিমেশন: সব উপাদান একসাথে নড়বে */
+.card:hover h2, 
+.card:hover .subtitle,
+.card:hover p,
+.card:hover .location {
+    transform: translateZ(20px);
+}
+
+/* আব্দুল্লাহ আল নোমান নামের জন্য বিশেষ ইংরেজি স্টাইল */
+h1 {
+    font-family: 'Montserrat', sans-serif; /* নামের জন্য একটি ভিন্ন, আকর্ষণীয় ফন্ট */
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #a5d6ff 0%, #58a6ff 100%); /* রঙিন গ্রেডিয়েন্ট টেক্সট */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* প্রোফাইল ছবি এবং গার্লফ্রেন্ডের ছবির জন্য আরও উন্নত স্টাইল */
+.profile-img-container, .partner-img-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 220px; /* ছবির আকার একটু বড় করা হয়েছে */
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 15px rgba(88, 166, 255, 0.5); /* ছবির চারপাশে রঙিন আভা */
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.profile-img, .partner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+/* ছবির হোভার অ্যানিমেশন */
+.profile-img-container:hover, .partner-img-container:hover {
+    box-shadow: 0 0 25px rgba(88, 166, 255, 1); /* হোভারে আরও উজ্জ্বল আভা */
+}
+
+.profile-img-container:hover .profile-img, .partner-img-container:hover .partner-img {
+    transform: scale(1.1) rotate(3deg); /* ছবির স্কেল এবং ঘূর্ণন */
+}
+
+h2 {
+    color: #8b949e;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #30363d;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.subtitle {
+    color: #a5d6ff;
+    font-style: italic;
+    font-size: 1.25em;
+    margin-bottom: 15px;
+}
+
+.location {
+    color: #c9d1d9;
+    font-size: 1em;
+    background-color: #30363d;
+    padding: 7px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: background-color 0.4s ease;
+}
+
+.location:hover {
+    background-color: #58a6ff;
+}
+
+/* আমার সম্পর্কে সেকশন: আরও বিস্তারিত এবং সুন্দর টেক্সট */
+p {
+    line-height: 1.9;
+    font-size: 1.15em;
+    text-align: justify;
+    margin-top: 10px;
+}
